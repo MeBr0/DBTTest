@@ -1,0 +1,24 @@
+<div class="main">
+  <div class="new-list">
+    <mat-form-field class="example-full-width">
+      <mat-label>New task list?</mat-label>
+      <input matInput placeholder="Holidays" [(ngModel)]="newTitle">
+    </mat-form-field>
+
+    <button mat-button color="primary" (click)="createTaskList()">Create</button>
+  </div>
+
+  <div class="lists">
+    <mat-list *ngIf="lists">
+      <mat-list-item *ngFor="let list of lists">
+        <mat-icon matListIcon>folder</mat-icon>
+
+        <a matLine routerLink="/lists/{{list.id}}" routerLinkActive="active"> {{list.title}} </a>
+
+        <button mat-icon-button color="warn" (click)="deleteTaskList(list)">
+          <mat-icon>delete</mat-icon>
+        </button>
+      </mat-list-item>
+    </mat-list>
+  </div>
+</div>

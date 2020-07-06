@@ -1,0 +1,74 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.list-item {
+  width: 500px;
+  height: 75px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list-item mat-form-field {
+  width: 500px;
+  height: 75px;
+}
+
+.new-task {
+  width: 500px;
+  height: 75px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.new-task mat-form-field {
+  width: 500px;
+  height: 75px;
+}
+
+.tasks {
+  width: 600px;
+  height: 550px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+mat-list {
+  width: 600px;
+  height: 550px;
+}
+
+mat-list-item {
+  width: 600px;
+  height: 55px;
+}
+
+mat-checkbox {
+  width: 600px;
+  height: 55px;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+mat-checkbox a {
+  color: black;
+  text-decoration: none;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

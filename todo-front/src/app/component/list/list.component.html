@@ -1,0 +1,33 @@
+<div class="list">
+  <div class="list-item">
+    <mat-form-field class="example-full-width">
+      <mat-label>Task list title</mat-label>
+      <input matInput placeholder="Title" [(ngModel)]="list.title">
+    </mat-form-field>
+
+    <button mat-button color="primary" (click)="updateTitle()">Save title</button>
+  </div>
+
+  <div class="new-task">
+    <mat-form-field class="example-full-width">
+      <mat-label>New task?</mat-label>
+      <input matInput placeholder="Holidays" [(ngModel)]="newTitle">
+    </mat-form-field>
+
+    <button mat-button color="primary" (click)="createTask()">Create</button>
+  </div>
+
+  <div class="tasks">
+    <mat-list *ngIf="tasks">
+      <mat-list-item *ngFor="let task of tasks">
+        <mat-checkbox color="primary" class="example-margin" [(ngModel)]="task.done" (click)="doTask(task)">
+          <a routerLink="/lists/{{list.id}}/tasks/{{task.id}}" routerLinkActive="active" matLine> {{task.title}} </a>
+        </mat-checkbox>
+
+        <button mat-icon-button color="warn" (click)="deleteTask(task)">
+          <mat-icon>delete</mat-icon>
+        </button>
+      </mat-list-item>
+    </mat-list>
+  </div>
+</div>

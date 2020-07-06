@@ -1,0 +1,18 @@
+<div class="task">
+  <mat-card *ngIf="task">
+    <div class="title">
+      <mat-form-field class="example-full-width">
+        <mat-label>Task title</mat-label>
+        <textarea matInput placeholder="Title" rows="5" [(ngModel)]="task.title">
+
+        </textarea>
+      </mat-form-field>
+    </div>
+
+    <div class="ready">
+      <mat-checkbox color="primary" class="example-margin" [(ngModel)]="task.done">ready?</mat-checkbox>
+
+      <button mat-button color="primary" (click)="saveTask()">Save title</button>
+    </div>
+  </mat-card>
+</div>

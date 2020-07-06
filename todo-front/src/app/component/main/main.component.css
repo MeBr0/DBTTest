@@ -1,0 +1,54 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.new-list {
+  width: 500px;
+  height: 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.new-list mat-form-field {
+  width: 500px;
+  height: 50px;
+}
+
+.new-list button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 80px;
+  height: 40px;
+}
+
+.lists {
+  width: 600px;
+  height: 650px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+mat-list {
+  width: 600px;
+  height: 650px;
+}
+
+mat-list-item {
+  width: 600px;
+  height: 65px;
+}
+
+mat-list-item a {
+  color: black;
+  text-decoration: none;
+}
